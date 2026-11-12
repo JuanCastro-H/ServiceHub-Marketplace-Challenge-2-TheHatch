@@ -1,0 +1,10 @@
+[
+  { "id": 1, "nombre": "Ramón Benítez", "categoria": "Plomería", "rating": 4.8, "telefono": "0981000001", "zona": "Villa Morra", "descripcion": "Reparación de cañerías, pérdidas y destapes. Sí, aparece el día que dice." },
+  { "id": 2, "nombre": "Electro Ñandú", "categoria": "Electricidad", "rating": 4.5, "telefono": "0981000002", "zona": "Recoleta", "descripcion": "Instalaciones eléctricas, tableros y cambio de cableado. Sin pedidos de pizza accidentales." },
+  { "id": 3, "nombre": "Carlos Giménez", "categoria": "Plomería", "rating": 3.9, "telefono": "0981000003", "zona": "Sajonia", "descripcion": "Instalación de sanitarios y termotanques." },
+  { "id": 4, "nombre": "Climas del Paraguay", "categoria": "Aire acondicionado", "rating": 4.7, "telefono": "0981000004", "zona": "Mburucuyá", "descripcion": "Instalación y mantenimiento de aires acondicionados." },
+  { "id": 5, "nombre": "Pinturas Luz", "categoria": "Pintura", "rating": 4.2, "telefono": "0981000005", "zona": "Barrio Obrero", "descripcion": "Pintura de interiores y exteriores, con presupuesto sin costo." },
+  { "id": 6, "nombre": "Cerrajería Llave Maestra", "categoria": "Cerrajería", "rating": 4.9, "telefono": "0981000006", "zona": "Centro", "descripcion": "Apertura de puertas y cambio de cerraduras, urgencias 24 hs." },
+  { "id": 7, "nombre": "Maderas Don Pedro", "categoria": "Carpintería", "rating": 4.1, "telefono": "0981000007", "zona": "Villa Morra", "descripcion": "Muebles a medida, placares y reparaciones." },
+  { "id": 8, "nombre": "Luis Ortiz", "categoria": "Electricidad", "rating": 3.6, "telefono": "0981000008", "zona": "Sajonia", "descripcion": "Arreglos eléctricos domiciliarios y luminarias." }
+]
