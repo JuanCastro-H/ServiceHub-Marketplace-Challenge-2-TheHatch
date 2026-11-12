@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Listado de plomeros, electricistas y más proveedores de servicios en Asunción con sus calificaciones." />
+    <title>Proveedores | Manos a la Obra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } };
+    </script>
+</head>
+
+<body class="bg-slate-50 font-sans text-slate-900">
+
+    <a href="#contenido"
+        class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:rounded focus:bg-white focus:p-2">
+        Saltar al contenido
+    </a>
+
+    <header id="navbar" class="border-b border-slate-200 bg-white"></header>
+
+    <main id="contenido" class="mx-auto max-w-5xl px-4 py-10">
+        <h1 class="text-3xl font-extrabold">Proveedores de servicios</h1>
+        <p class="mt-2 text-slate-700">Elige a quién contratar según su calificación y zona.</p>
+
+        <!-- Región que anuncia cambios a lectores de pantalla -->
+        <div id="estados" class="mt-8" aria-live="polite">
+
+            <!-- Estado: Cargando -->
+            <div id="estado-cargando" class="flex items-center justify-center gap-3 py-16 text-slate-700">
+
+                <span class="h-6 w-6 animate-spin rounded-full border-4 border-slate-300 border-t-blue-600" aria-hidden="true"></span>
+                <p>Cargando proveedores...</p>
+            
+            </div>
+
+            <!-- Estado: Sin resultados -->
+            <div id="estado-vacio" class="hidden rounded-lg border border-slate-200 bg-white p-10 text-center">
+
+                <p class="text-lg font-semibold">No hay proveedores disponibles por ahora</p>
+                <p class="mt-1 text-slate-700">Vuelve a intentarlo más tarde.</p>
+            
+            </div>
+
+            <!-- Estado: Error -->
+            <div id="estado-error" class="hidden rounded-lg border border-red-200 bg-red-50 p-10 text-center">
+
+                <p class="text-lg font-semibold text-red-800">No pudimos cargar los proveedores</p>
+                <p class="mt-1 text-red-800">Revisa tu conexión e inténtalo de nuevo.</p>
+
+                <button id="btn-reintentar" type="button"
+                    class="mt-4 rounded-lg bg-blue-600 px-5 py-2 font-semibold text-white hover:bg-blue-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-300">
+                    Reintentar
+                </button>
+            
+            </div>
+    </div>
+
+    <!-- Lista de tarjetas -->
+    <ul id="lista" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></ul>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white py-6 text-center text-sm text-slate-600">
+        Hecho en Asunción · Proyecto AAPHA
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/proveedores.js"></script>
+
+</body>
+</html>

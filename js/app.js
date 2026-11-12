@@ -47,3 +47,29 @@ function renderNavbar() {
 
 // --- Ejecuta la función una vez que el documento HTML haya terminado de cargarse ---
 document.addEventListener('DOMContentLoaded', renderNavbar);
+
+
+
+// Convierte un rating (ej. 4.5) en estrellas visuales + texto accesible
+function renderStars(rating) {
+
+    const full = Math.round(rating);
+    const stars = '★'.repeat(full) + '☆'.repeat(5 - full);
+
+    return `
+    <span class="flex items-center gap-2" role="img" aria-label="Calificación: ${rating} de 5">
+        <span aria-hidden="true" class="text-lg text-amber-600">${stars}</span>
+        <span aria-hidden="true" class="text-sm font-semibold text-slate-700">${rating.toFixed(1)}</span>
+    </span>`;
+}
+
+// Un solo lugar para pedir los datos (como si fuera un backend)
+async function fetchProviders() {
+
+    await new Promise(r => setTimeout(r, 5000));
+
+    const res = await fetch('data/xxx.json');
+    if (!res.ok) throw new Error(`Error HTTP ${res.status}`);
+    return res.json();
+
+}
