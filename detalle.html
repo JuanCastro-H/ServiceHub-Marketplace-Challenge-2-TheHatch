@@ -7,13 +7,13 @@
     <meta name="description"
         content="Perfil, calificación y contacto del proveedor de servicios seleccionado en Asunción." />
     <title>Detalle del proveedor | Manos a la Obra</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+        media="print" onload="this.media='all'" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } };
-    </script>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body class="bg-slate-50 font-sans text-slate-900">
@@ -67,8 +67,8 @@
         Hecho en Asunción · Proyecto AAPHA
     </footer>
 
-    <script src="js/app.js"></script>
-    <script src="js/detalle.js"></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/detalle.js" defer></script>
 </body>
 
 </html>
