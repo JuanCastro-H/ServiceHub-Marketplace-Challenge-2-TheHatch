@@ -31,7 +31,7 @@ function renderPerfil(p) {
 
 async function cargarDetalle() {
     mostrarEstado('cargando');
-    const id = Number(new URLSearchParams(location.search).get('id'));
+    const id = new URLSearchParams(location.search).get('id');
 
     try {
         const proveedores = await fetchProviders();
