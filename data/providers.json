@@ -70,5 +70,59 @@
         "telefono": "0981000008",
         "zona": "Sajonia",
         "descripcion": "Arreglos eléctricos domiciliarios y luminarias."
+    },
+    {
+        "id": 9,
+        "nombre": "Aguas Claras Plomería",
+        "categoria": "Plomería",
+        "rating": 4.6,
+        "telefono": "0981000009",
+        "zona": "Mburucuyá",
+        "descripcion": "Detección de pérdidas, cambio de grifería y mantenimiento de tanques de agua."
+    },
+    {
+        "id": 10,
+        "nombre": "Andrés Villalba",
+        "categoria": "Plomería",
+        "rating": 4.3,
+        "telefono": "0981000010",
+        "zona": "Recoleta",
+        "descripcion": "Destape de cañerías y reparación de baños. Presupuesto el mismo día."
+    },
+    {
+        "id": 11,
+        "nombre": "Chispa Rápida",
+        "categoria": "Electricidad",
+        "rating": 4.4,
+        "telefono": "0981000011",
+        "zona": "Barrio Obrero",
+        "descripcion": "Urgencias eléctricas, cortocircuitos y cambio de tableros."
+    },
+    {
+        "id": 12,
+        "nombre": "Instalaciones Duarte",
+        "categoria": "Electricidad",
+        "rating": 3.8,
+        "telefono": "0981000012",
+        "zona": "Centro",
+        "descripcion": "Instalación de luminarias, ventiladores y tomacorrientes."
+    },
+    {
+        "id": 13,
+        "nombre": "Jardines del Sol",
+        "categoria": "Jardinería",
+        "rating": 4.5,
+        "telefono": "0981000013",
+        "zona": "Villa Morra",
+        "descripcion": "Mantenimiento de jardines, poda de árboles y diseño de espacios verdes."
+    },
+    {
+        "id": 14,
+        "nombre": "Limpieza Total Asunción",
+        "categoria": "Limpieza",
+        "rating": 4.0,
+        "telefono": "0981000014",
+        "zona": "Sajonia",
+        "descripcion": "Limpieza profunda de hogares y oficinas, y limpieza posterior a obras."
     }
 ]
