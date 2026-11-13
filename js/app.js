@@ -66,9 +66,9 @@ function renderStars(rating) {
 // Un solo lugar para pedir los datos (como si fuera un backend)
 async function fetchProviders() {
 
-    await new Promise(r => setTimeout(r, 5000));
+    await new Promise(r => setTimeout(r, 2000));
 
-    const res = await fetch('data/xxx.json');
+    const res = await fetch('data/providers.json');
     if (!res.ok) throw new Error(`Error HTTP ${res.status}`);
     return res.json();
 
