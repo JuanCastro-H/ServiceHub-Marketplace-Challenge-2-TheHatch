@@ -35,7 +35,7 @@ async function cargarDetalle() {
 
     try {
         const proveedores = await fetchProviders();
-        const proveedor = proveedores.find((p) => p.id === id);
+        const proveedor = proveedores.find((p) => String(p.id) === id);
 
         if (!proveedor) {
             mostrarEstado('noencontrado');
