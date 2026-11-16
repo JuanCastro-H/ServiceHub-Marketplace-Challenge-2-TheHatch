@@ -20,7 +20,7 @@ HTML, JavaScript vanilla y **Tailwind CSS** (única estrategia de estilos, compi
 ## Cómo ejecutar
 
 ```bash
-git clone https://github.com/TU_USUARIO/app-servicios-asuncion.git
+git clone https://github.com/JuanCastro-H/ServiceHub-Marketplace-Challenge-2-TheHatch
 cd app-servicios-asuncion
 npm install
 npm run build:css

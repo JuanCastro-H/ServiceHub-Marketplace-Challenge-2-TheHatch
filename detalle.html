@@ -1,36 +1,54 @@
 <!DOCTYPE html>
+<!-- Definir Idioma En español  -->
 <html lang="es">
 
 <head>
+    <!-- Configuracion De Caracteres -->
     <meta charset="UTF-8" />
+
+    <!-- Configura la vista adaptable (responsive) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Descripción De La Web -->
     <meta name="description"
         content="Perfil, calificación y contacto del proveedor de servicios seleccionado en Asunción." />
     <title>Detalle del proveedor | Manos a la Obra</title>
+
+    <!-- Precarga la hoja de estilos de Google Fonts en segundo plano para acelerar la velocidad inicial -->
     <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" />
+    <!-- Carga la tipografía (pesos 400, 500, 700 y 800) asíncrona -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
         media="print" onload="this.media='all'" />
+    <!-- Abre una conexión anticipada con el servidor de archivos de fuentes de Google -->
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <!-- Conecta nuestra hoja de estilos principal compilada con Tailwind CSS -->
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
+
+<!-- Cuerpo De La Pagina Gris y texto oscuro -->
 <body class="bg-slate-50 font-sans text-slate-900">
+
+
     <a href="#contenido"
         class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:rounded focus:bg-white focus:p-2">
         Saltar al contenido
     </a>
 
+    <!-- Barra De Navegación -->
     <header id="navbar" class="border-b border-slate-200 bg-white"></header>
 
-    <main id="contenido" class="mx-auto max-w-3xl px-4 py-10">
+    <!-- Enlace superior para regresar al catálogo general -->
+    <main id="contenido" class="max-w-3xl px-4 py-10">
         <a href="proveedores.html"
             class="inline-block rounded-md text-sm font-semibold text-blue-700 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600">
             ← Volver al listado
         </a>
-
+        
+        <!-- Contenedor de los 3 estados -->
         <div id="estados" class="mt-6" aria-live="polite">
+
             <!-- Cargando -->
             <div id="estado-cargando" class="flex items-center justify-center gap-3 py-16 text-slate-700">
                 <span class="h-6 w-6 animate-spin rounded-full border-4 border-slate-300 border-t-blue-600"
@@ -63,10 +81,12 @@
         <article id="perfil" class="hidden rounded-lg border border-slate-200 bg-white p-6 shadow-sm"></article>
     </main>
 
+    <!-- Pie de página -->
     <footer class="border-t border-slate-200 bg-white py-6 text-center text-sm text-slate-600">
         Hecho en Asunción · Proyecto AAPHA
     </footer>
 
+    <!-- Scripts con 'defer': se descargan en paralelo pero esperan a que todo el HTML esté construido antes de ejecutarse en orden -->
     <script src="js/app.js" defer></script>
     <script src="js/detalle.js" defer></script>
 </body>

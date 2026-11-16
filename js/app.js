@@ -4,17 +4,21 @@ const NAV_LINKS = [
     { href: 'proveedores.html', label: 'Proveedores' }, // Proveedores.
 ];
 
-// --- Genera Y Inserta Dinamicamente La Barra De Navegación en el DOM  ---
+
+// ----------------------------------------
+// CONSTRUCCIÓN DE LA BARRA DE NAVEGACIÓN 
+// ----------------------------------------
+
 function renderNavbar() {
 
-    // --- Buscar Etiqueta Con Identificador ---
+    // --- Buscar Etiqueta De La Barra De Navegación ---
     const nav = document.getElementById('navbar');
-    if (!nav) return; // Detener para evitar erroes.
+    if (!nav) return; // Si no existe, Detener para evitar erroes.
 
 
     // --- Detectar pagina actual ---
-    let current = location.pathname.split('/').pop() || 'index.html';
-    if (current === 'detalle.html') current = 'proveedores.html';     // Mantiene resaltadaa la seccion "Proveedores" desde la vista de detalle
+    let current = location.pathname.split('/').pop() || 'index.html';   // Obtener fragmento de ruta que le identifique.
+    if (current === 'detalle.html') current = 'proveedores.html';       // Mantiene resaltada la seccion "Proveedores" desde la vista de detalle
 
 
     // --- Contruye El HTML De Cada Enlace Evaluado ---
@@ -30,16 +34,15 @@ function renderNavbar() {
                 ${label}
             </a>
             </li>`;
-    }).join(''); // Une todos los <li> en un solo string sin separadores
+    }).join(''); // Une todos los <li>
+
+
 
     // --- Insertar Estructura HTML Del Navbar en el contenedor + Lista De Enlaces ---
     nav.innerHTML = `
     <nav aria-label="Navegación principal"
             class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-        <a href="index.html"
-            class="rounded-md text-lg font-bold text-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600">
-        Manos a la Obra
-        </a>
+        <span class="text-lg font-bold text-blue-700">Manos a la Obra</span>
         <ul class="flex gap-1">${links}</ul>
     </nav>`;
 }
